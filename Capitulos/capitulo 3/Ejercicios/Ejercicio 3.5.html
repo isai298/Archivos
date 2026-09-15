@@ -1,0 +1,67 @@
+<html>
+    <head>
+            <meta charset= "utf-8">
+            <title>Ejercicio 3.5</title>
+        </head>
+        <body>
+            <section id="1">
+            <h1>Elemento meter</h1>
+         <p>a) Se pidió a los estudiantes que clasificaran los alimentos en la cafetería, en una escuela del 1 al 10. Use un elemento
+meter con texto a su izquierda y a su derecha para indicar que la calificación promedio fue 7 de 10</p>   
+            <p>7 <meter min="1" max="10" value="7"></meter> 10</p>
+        </section>
+
+         <section id="2">
+            <p>b) Cree un elemento details que muestre el texto "Resultados de la encuesta" en el elemento summary. Cuando el usuario haga clic en la flecha enseguida del texto de summary, deberá aparecer un párrafo que explique sobre la encuesta.</p>
+            <details>
+    <summary>Resultados de la encuesta</summary>
+    <p>
+        Los estudiantes calificaron los alimentos de la cafetería
+        en una escala del 1 al 10. La calificación promedio fue de 7.
+    </p>
+</details>
+         </section>
+          <section id="3">
+            <p>c) Cree un elemento input de tipo text para el primer nombre. El elemento deberá recibir el enfoque de manera automática al momento de desplegar el formulario en un navegador.</p>
+         <p>
+    <label>Primer nombre:
+        <input type="text" autofocus />
+    </label>
+</p>
+         </section>
+           <section id="4">
+            <p>d) Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder en el elemento input.</p>
+            <input type="text" placeholder="Primer nombre" autofocus />
+           </section>
+          
+
+               <section id="4">
+              <p> e) Use un elemento datalist para proveer una lista autocompleta para cinco estados.</p> 
+ <input type="text" list="estados">
+              <datalist id="estados">
+    <option value="Veracruz">
+    <option value="Puebla">
+    <option value="Oaxaca">
+    <option value="Chiapas">
+    <option value="Tabasco">
+</datalist>
+</section>
+
+<section id="5">
+    <p>f) Cree un elemento input de tipo range que permita al usuario seleccionar un número del 1 al 100.</p>
+1<input type="range" min="1" max="100">100
+</section>
+
+<section id="6">
+    <p>g) Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta de apertura del formulario.</p>
+<form autocomplete="off"></form>
+</section>
+
+<section id="6">
+    <p>h) Use un elemento mark para resaltar el segundo enunciado del siguiente párrafo:</p>
+<p>Se pidió a los estudiantes que calificaran los alimentos en la cafetería
+en una escala del 1 al 10. <mark>El resultado promedio fue 7.</mark></p>
+</section>
+
+        </body>
+</html>

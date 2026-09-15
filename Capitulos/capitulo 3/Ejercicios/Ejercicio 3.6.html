@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset= "utf-8">
+            <title>Ejercicio 3.6</title>
+         </head>
+
+         <body>
+            <h1>Formulario de registro web con pregunta opcional</h1>
+
+            <h2>Autocomplete los siguientes Datos solicitados</h2>
+
+        <p> formulario de registro de un sitio Web para obtener 
+el primer nombre, apellido y dirección de correo electrónico de un usuario.
+        </p>
+      
+        <!--activar autocomplete-->
+        <form method = "post" autocomplete = "on">
+        <p><label>Primer nombre:
+            <input type = "text" id = "primerNombre"
+            placeholder = "Primer nombre" /> (Primer nombre)
+            </label></p>
+            <p><label>Apellido:
+                <input type = "text" id = "apellido"
+                placeholder="Apellido"/>(Apellido)
+                </label></p>
+                <p><label>Email:
+                    <input type = "email" id = "email"
+                    placeholder = "nombre@dominio.com"/> (nombre@dominio.com)
+                    </label></p>
+
+                    <details>
+    <summary>Encuesta opcional</summary>
+
+    <label for="anio">¿En qué año de la universidad te encuentras?</label>
+    <select id="anio" name="anio">
+
+        <option value="primer">Primer semestre</option>
+        <option value="segundo">Segundo semestre</option>
+        <option value="tercer">Tercer semestre</option>
+        <option value="cuarto">Cuarto semestre</option>
+        <option value="quinto">Quinto semestre</option>
+        <option value="Sexto">Sexto semestre</option>
+        <option value="Septimo">Septimo semestre</option>
+        <option value="Octavo">Octavo semestre</option>
+        <option value="Noveno">Noveno semestre</option>
+    </select>
+</details>
+
+ </body>
+</html>

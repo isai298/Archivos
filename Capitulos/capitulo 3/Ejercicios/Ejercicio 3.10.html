@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 3.2.1 - Input tipos color (Con Figuras)</title>
+</head>
+<body>
+
+    <header>
+        <h1>Capítulo 3: Formularios en HTML5</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Sección 3.2.1 Input tipos color</h2>
+                
+                <ul>
+                    <li>
+                        El tipo <code>input color</code> (pág. 80) permite al usuario introducir un color.
+                    </li>
+                    <li>
+                        La mayoría de los navegadores despliegan el tipo <code>input color</code> como un campo de texto en donde el usuario puede introducir un código hexadecimal.
+                    </li>
+                    <li>
+                        En el futuro, cuando el usuario haga clic sobre un tipo <code>input color</code>, es probable que los navegadores muestren un cuadro de diálogo en donde el usuario podrá elegir un color.
+                    </li>
+                </ul>
+
+                <!-- Figura relativa a la entrada de tipo color -->
+                <figure>
+                    <img src="textoEImagenesEjercicio/figura1.png" alt="Muestra del selector de color tipo input color en el navegador">
+                    <figcaption><strong>Figura 3.1:</strong> Despliegue del elemento <code>input type="color"</code> y cuadro de diálogo para selección de color.</figcaption>
+                </figure>
+
+                <ul>
+                    <li>
+                        El atributo <code>autofocus</code> (pág. 80), que puede usarse sólo en un elemento <code>input</code> de un formulario, coloca el cursor en el campo de texto después de que se carga el navegador y despliega la página. No necesitamos incluir el elemento <code>autofocus</code> en nuestros formularios.
+                    </li>
+                    <li>
+                        Los nuevos tipos <code>input</code> de HTML5 tienen validación automática del lado del cliente, con lo cual se elimina la necesidad de agregar código de JavaScript para validar la entrada del usuario y reducir la cantidad de datos incorrectos que se envían.
+                    </li>
+                    <li>
+                        Cuando un usuario introduce datos en un formulario y luego lo envía, el navegador verifica de inmediato si los datos son correctos.
+                    </li>
+                    <li>
+                        Si desea anular la validación, puede agregar el atributo <code>formnovalidate</code> (pág. 82) al tipo <code>input submit</code>.
+                    </li>
+                    <li>
+                        Mediante el uso de JavaScript es posible personalizar el proceso de validación.
+                    </li>
+                </ul>
+
+                <!-- Figura relativa a la validación automática -->
+                <figure>
+                    <img src="textoEImagenesEjercicio/figura2.png" alt="Ejemplo de mensaje de validación automática en un formulario HTML5">
+                    <figcaption><strong>Figura 3.2:</strong> Ejemplo de validación automática del lado del cliente al enviar el formulario.</figcaption>
+                </figure>
+
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Ejercicio de maquetación HTML5 con figuras</p>
+    </footer>
+
+</body>
+</html>

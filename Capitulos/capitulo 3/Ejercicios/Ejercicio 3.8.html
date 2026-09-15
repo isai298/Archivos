@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<!--Formulario autocomplete con datalist-->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Autocomplete con datalist</title>
+    </head>
+
+    <body>
+        <h1>Formulario autocomplete con datalist</h1>
+
+        <form autocomplete = "on">
+            <p>
+                <label>Día de la semana:
+                    <input type = "text" list = "dias"
+                    placeholder = "Seleccione un día"/>
+
+                    <datalist id = "dias">
+                        <option value = "Lunes">
+                        <option value = "Martes">
+                        <option value = "Miércoles">
+                        <option value = "Jueves">
+                        <option value = "Viernes">
+                        <option value = "Sábado">
+                        <option value = "Domingo">
+                    </datalist>
+                </label>
+            </p>
+        </form>
+    </body>
+</html>
+```

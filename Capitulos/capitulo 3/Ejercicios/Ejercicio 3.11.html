@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 3.2.1 - Input tipos color (Con Elemento Details)</title>
+</head>
+<body>
+
+    <header>
+        <h1>Capítulo 3: Formularios en HTML5</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Sección 3.2.1 Input tipos color</h2>
+                
+                <ul>
+                    <li>
+                        El tipo <code>input color</code> (pág. 80) permite al usuario introducir un color.
+                    </li>
+                    <li>
+                        La mayoría de los navegadores despliegan el tipo <code>input color</code> como un campo de texto en donde el usuario puede introducir un código hexadecimal.
+                    </li>
+                    <li>
+                        En el futuro, cuando el usuario haga clic sobre un tipo <code>input color</code>, es probable que los navegadores muestren un cuadro de diálogo en donde el usuario podrá elegir un color.
+                    </li>
+                </ul>
+
+                <!-- Figura 3.1 -->
+                <figure>
+                    <img src="textoEImagenesEjercicio/figura1.png" alt="Muestra del selector de color tipo input color en el navegador">
+                    <figcaption><strong>Figura 3.1:</strong> Despliegue del elemento <code>input type="color"</code> y cuadro de diálogo para selección de color.</figcaption>
+                </figure>
+
+                <ul>
+                    <li>
+                        El atributo <code>autofocus</code> (pág. 80), que puede usarse sólo en un elemento <code>input</code> de un formulario, coloca el cursor en el campo de texto después de que se carga el navegador y despliega la página. No necesitamos incluir el elemento <code>autofocus</code> en nuestros formularios.
+                    </li>
+                    <li>
+                        Los nuevos tipos <code>input</code> de HTML5 tienen validación automática del lado del cliente, con lo cual se elimina la necesidad de agregar código de JavaScript para validar la entrada del usuario y reducir la cantidad de datos incorrectos que se envían.
+                    </li>
+                    <li>
+                        Cuando un usuario introduce datos en un formulario y luego lo envía, el navegador verifica de inmediato si los datos son correctos.
+                    </li>
+                    <li>
+                        Si desea anular la validación, puede agregar el atributo <code>formnovalidate</code> (pág. 82) al tipo <code>input submit</code>.
+                    </li>
+                    <li>
+                        Mediante el uso de JavaScript es posible personalizar el proceso de validación.
+                    </li>
+                </ul>
+
+                <!-- Elemento details con la tabla de la Figura 3.5 -->
+                <details>
+                    <summary><strong>Figura 3.5:</strong> Tipos de input y formatos permitidos</summary>
+                    <br>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Tipo de input</th>
+                                <th>Formato</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>color</code></td>
+                                <td>Código hexadecimal</td>
+                            </tr>
+                            <tr>
+                                <td><code>date</code></td>
+                                <td>aaaa-mm-dd</td>
+                            </tr>
+                            <tr>
+                                <td><code>datetime</code></td>
+                                <td>aaaa-mm-dd</td>
+                            </tr>
+                            <tr>
+                                <td><code>datetime-local</code></td>
+                                <td>aaaa-mm-ddThh:mm</td>
+                            </tr>
+                            <tr>
+                                <td><code>month</code></td>
+                                <td>aaaa-mm</td>
+                            </tr>
+                            <tr>
+                                <td><code>number</code></td>
+                                <td>Cualquier valor numérico</td>
+                            </tr>
+                            <tr>
+                                <td><code>email</code></td>
+                                <td>nombre@dominio.com</td>
+                            </tr>
+                            <tr>
+                                <td><code>url</code></td>
+                                <td>http://www.nombredominio.com</td>
+                            </tr>
+                            <tr>
+                                <td><code>time</code></td>
+                                <td>hh:mm</td>
+                            </tr>
+                            <tr>
+                                <td><code>week</code></td>
+                                <td>aaaa-Wnn</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Ejercicio de maquetación HTML5 con elemento details y tabla</p>
+    </footer>
+
+</body>
+</html>
