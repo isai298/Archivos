@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5.14 - Transformación :hover</title>
+  <style>
+    .galeria-cuatro {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .galeria-cuatro img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Incrementa el tamaño un 20% en :hover */
+    .galeria-cuatro img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Pasa el ratón sobre una imagen (+20% tamaño)</h2>
+  <div class="galeria-cuatro">
+    <img src="https://picsum.photos/id/10/200/150" alt="Imagen 1">
+    <img src="https://picsum.photos/id/20/200/150" alt="Imagen 2">
+    <img src="https://picsum.photos/id/30/200/150" alt="Imagen 3">
+    <img src="https://picsum.photos/id/40/200/150" alt="Imagen 4">
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5.11 - Fusionar Imágenes</title>
+    <style>
+    .galeria-fusion {
+      position: relative;
+      width: 400px;
+      height: 500px;
+    }
+
+    .galeria-fusion img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 3s;
+      transition-timing-function: linear;
+    }
+
+    /* La primera imagen es visible por defecto */
+    .galeria-fusion img:first-child {
+      opacity: 1;
+    }
+
+    /* Animación continua cambiando opacidad de las 5 imágenes */
+    .galeria-fusion img {
+      animation: fusionar 15s infinite linear;
+    }
+
+    .galeria-fusion img:nth-child(1) { animation-delay: 0s; }
+    .galeria-fusion img:nth-child(2) { animation-delay: 3s; }
+    .galeria-fusion img:nth-child(3) { animation-delay: 6s; }
+    .galeria-fusion img:nth-child(4) { animation-delay: 9s; }
+    .galeria-fusion img:nth-child(5) { animation-delay: 12s; }
+
+    @keyframes fusionar {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    </style>
+  </head>
+ <body>
+  <h2>Transición / Fusión de 5 Imágenes</h2>
+  <div class="galeria-fusion">
+    <img src="Imagen1.jpeg" alt="Foto 1">
+    <img src="Imagen2.jpeg" alt="Foto 2">
+    <img src="Imagen3.jpeg" alt="Foto 3">
+    <img src="Imagen4.jpeg" alt="Foto 4">
+    <img src="Imagen5.png" alt="Foto 5">
+  </div>
+ </body>
+</html>

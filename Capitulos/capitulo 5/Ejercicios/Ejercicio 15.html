@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5.15 - Reflejo de Imagen</title>
+  <style>
+    .contenedor-reflejo {
+      margin: 50px;
+    }
+
+    .imagen-reflejada {
+      max-width: 350px; 
+      height: auto;
+      border-radius: 6px;
+      -webkit-box-reflect: right 20px linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4));
+    }
+  </style>
+</head>
+<body>
+  <h2>Reflejo a 20px a la derecha</h2>
+
+  <div class="contenedor-reflejo">
+    <img src="Imagen4.jpeg" class="imagen-reflejada" alt="Imagen local">
+  </div>
+</body>
+</html>

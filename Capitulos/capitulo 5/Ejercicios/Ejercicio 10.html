@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5.10 - Inclinación Alternada</title>
+    <style>
+    .caja-inclinada {
+      width: 200px;
+      height: 150px;
+      background-color: #e74c3c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 100px auto;
+      border-radius: 8px;
+      animation: inclinar 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes inclinar {
+      0% {
+        transform: skewY(30deg); /* Arriba hacia abajo */
+      }
+      50% {
+        transform: skew(0deg, 0deg);
+      }
+      100% {
+        transform: skewX(30deg); /* Izquierda a derecha */
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="caja-inclinada">Inclinar Texto</div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5.16 - Consultas de Medios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* En computadora: 3 columnas una al lado de la otra */
+    .contenedor {
+      display: flex;
+      gap: 15px;
+    }
+
+    .columna {
+      flex: 1; /* Hace que las 3 columnas midan lo mismo */
+      background-color: #f2f2f2;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* En celulares (ancho máximo de 480px): pasa a 1 sola columna vertical */
+    @media (max-width: 480px) {
+      .contenedor {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi P&aacute;gina Adaptable</h1>
+
+  <div class="contenedor">
+
+    <div class="columna">
+      <h2>Inicio</h2>
+      <p>Bienvenido a nuestro sitio web. Aqu&iacute; encontrar&aacute;s informaci&oacute;n general sobre nuestros servicios y proyectos.</p>
+    </div>
+
+    <div class="columna">
+      <h2>Servicios</h2>
+      <p>Ofrecemos dise&ntilde;o web b&aacute;sico, desarrollo de sistemas y optimizaci&oacute;n de p&aacute;ginas web adaptables.</p>
+    </div>
+
+    <div class="columna">
+      <h2>Contacto</h2>
+      <p>Puedes enviarnos un mensaje o vis&iacute;tanos para obtener m&aacute;s detalles sobre nuestro trabajo.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
